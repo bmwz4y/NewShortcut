@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editName_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/currentName_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fab_margin" />
+
+    <EditText
+        android:id="@+id/rename_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/rename_editText_hint"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:padding="@dimen/fab_margin" />
+
+    <include
+        style="?android:buttonBarStyle"
+        layout="@layout/ok_and_cancel_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

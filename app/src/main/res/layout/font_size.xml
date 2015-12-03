@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/half_norm"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/shortcutFontSizingLabel_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:labelFor="@+id/shortcutFontSizing_editText"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/norm"
+        android:paddingRight="@dimen/norm"
+        android:text="@string/shortcutFontSizingLabel"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorPrimaryDark"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    <EditText
+        android:id="@id/shortcutFontSizing_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:inputType="number"
+        android:padding="@dimen/half_norm"
+        android:paddingLeft="@dimen/norm"
+        android:paddingRight="@dimen/norm"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <include layout="@layout/font_size_plus_and_minus_buttons" />
+
+    <!--to solve a problem in the fbutton namespace that makes all row elements click with it-->
+    <LinearLayout xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/shortcutFontSizingDefault_button"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:paddingLeft="@dimen/half_norm"
+            android:paddingRight="@dimen/half_norm"
+            android:singleLine="true"
+            android:text="@string/defaultButtons_text"
+            android:textColor="@color/fbutton_color_white"
+            fbutton:buttonColor="@color/fbutton_color_alizarin"
+            fbutton:cornerRadius="10dp"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp" />
+    </LinearLayout>
+</LinearLayout>

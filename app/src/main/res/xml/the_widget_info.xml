@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:configure="nodomain.yeh.newshortcut.TheWidgetConfigureActivity"
+    android:initialLayout="@layout/the_widget"
+    android:minHeight="40dp"
+    android:minWidth="40dp"
+    android:previewImage="@drawable/new_shortcut_creation_106"
+    android:updatePeriodMillis="0"
+    android:widgetCategory="home_screen"/>

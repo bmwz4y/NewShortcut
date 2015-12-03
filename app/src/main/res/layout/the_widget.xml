@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/the_widget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:padding="@dimen/widget_padding">
+
+    <ImageView
+        android:id="@+id/iconImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/theWidget_name_textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/images_description"
+        android:src="@drawable/default_icon" />
+
+    <ImageView
+        android:id="@+id/leftShortcutImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iconImageView"
+        android:layout_alignLeft="@id/iconImageView"
+        android:contentDescription="@string/images_description"
+        android:src="@mipmap/new_shortcut_l"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/theWidget_name_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxLines="2"
+        android:minLines="1"
+        android:scrollHorizontally="true"
+        android:shadowColor="@android:color/background_dark"
+        android:shadowDx="1"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:text="@string/theWidget_DefaultName"
+        android:textAlignment="center" />
+</RelativeLayout>

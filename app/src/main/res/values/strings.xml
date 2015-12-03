@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">A New Shortcut</string>
+    <string name="widget_name">+ Shortcut</string>
+    <string name="theWidget_DefaultName">Reloading&#8230;</string>
+
+    <string name="help_text">Edit list of active shortcuts</string>
+    <string name="editNameField">Name</string>
+    <string name="selectIcon">Select from preset icons</string>
+    <string name="customIcon">Load custom icon</string>
+    <string name="customIcon_chooserTitle">Select an image file</string>
+
+    <string name="noShortcutsYet_title">Hint</string>
+    <string name="noShortcutsYet_message">You should first add shortcuts using the widget</string>
+
+    <string name="nameDialogTitle">Name</string>
+    <string name="nameDialogCurrent">Current</string>
+    <string name="rename_editText_hint">New name</string>
+    <string name="nameDialogEmptyMessage">Empty name not allowed, you could use space character though!</string>
+
+    <string name="selectIconDialogTitle">Select an icon</string>
+    <string name="retryMessage">Retry again</string>
+
+    <string name="loading_message">Loading&#8230;</string>
+
+    <string name="file_not_found_toast">Shortcut origin not available</string>
+    <string name="no_handler_toast">None of the available applications could open this</string>
+    <string name="cancel_creation_toast">Cancelling shortcut creation</string>
+    <string name="affirm_creation_toast">Shortcut created successfully</string>
+    <string name="blame_message">Really!, how could I create shortcuts for files if I couldn\'t get access to them?</string>
+    <string name="images_description">Description TBD</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="settingsBannerFont">Font:</string>
+    <string name="customThumbnailAdjust">If the custom icon is small or large adjust this:</string>
+    <string name="shortcutFontSizingLabel">Size</string>
+    <string name="shortcutFontColoringLabel">Color</string>
+    <string name="defaultButtons_text">Default</string>
+    <string name="thumbnailSizingLabel">Factor</string>
+    <string name="settingsPreview_text">preview</string>
+
+    <string name="title_activity_settings">Settings</string>
+    <string name="applyButtons_text">Apply</string>
+    <string name="applyChangesButtons_text">Apply font changes</string>
+    <string name="chooseColor_text">Palette</string>
+    <string name="applyFontChanges_done">Changes applied.</string>
+    <string name="applyThumbnailChanges_done">You still need to [Load custom icon] for individual shortcuts.</string>
+    <string name="image_not_local_message">Image file not local, please download the file first</string>
+</resources>

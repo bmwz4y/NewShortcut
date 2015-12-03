@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:padding="6dip"
+    android:baselineAligned="false">
+
+    <include
+        android:id="@+id/inAppWidgetView"
+        layout="@layout/in_app_widget_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/norm"
+        android:layout_weight="2"
+        tools:ignore="RtlHardcoded" />
+
+    <!--to solve a problem in the fbutton namespace that makes all row elements click with it-->
+    <LinearLayout xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/editNameField_button"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/half_norm"
+            android:layout_marginRight="@dimen/half_norm"
+            android:ellipsize="marquee"
+            android:paddingLeft="@dimen/norm"
+            android:paddingRight="@dimen/norm"
+            android:singleLine="true"
+            android:text="@string/editNameField"
+            android:textColor="@color/fbutton_color_black"
+            fbutton:buttonColor="@color/colorPrimary"
+            fbutton:cornerRadius="10dp"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp" />
+
+    </LinearLayout>
+
+    <!--to solve a problem in the fbutton namespace that makes all row elements click with it-->
+    <LinearLayout xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/selectIcon_button"
+            style="?android:buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/half_norm"
+            android:layout_marginRight="@dimen/half_norm"
+            android:ellipsize="marquee"
+            android:paddingLeft="@dimen/norm"
+            android:paddingRight="@dimen/norm"
+            android:singleLine="true"
+            android:text="@string/selectIcon"
+            android:textColor="@color/fbutton_color_black"
+            fbutton:buttonColor="@color/colorPrimary"
+            fbutton:cornerRadius="10dp"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp" />
+    </LinearLayout>
+
+    <!--to solve a problem in the fbutton namespace that makes all row elements click with it-->
+    <LinearLayout xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/customIcon_button"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/half_norm"
+            android:layout_marginRight="@dimen/half_norm"
+            android:ellipsize="marquee"
+            android:paddingLeft="@dimen/norm"
+            android:paddingRight="@dimen/norm"
+            android:singleLine="true"
+            android:text="@string/customIcon"
+            android:textColor="@color/fbutton_color_black"
+            fbutton:buttonColor="@color/colorPrimary"
+            fbutton:cornerRadius="10dp"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp" />
+    </LinearLayout>
+
+</LinearLayout>

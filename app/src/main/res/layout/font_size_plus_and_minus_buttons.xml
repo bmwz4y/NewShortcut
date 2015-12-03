@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="@dimen/double_norm"
+    android:layout_marginRight="@dimen/double_norm"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="@dimen/half_norm">
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/fontSizePlus_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="@dimen/double_norm"
+        android:layout_height="@dimen/double_norm"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:ellipsize="marquee"
+        android:minHeight="1dp"
+        android:minWidth="1dp"
+        android:singleLine="true"
+        android:text="+"
+        android:textColor="@color/colorPrimary"
+        fbutton:buttonColor="@color/fbutton_color_clouds"
+        fbutton:cornerRadius="2dp"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="1dp"
+        tools:ignore="HardcodedText" />
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/fontSizeMinus_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="@dimen/double_norm"
+        android:layout_height="@dimen/double_norm"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:ellipsize="marquee"
+        android:minHeight="1dp"
+        android:minWidth="1dp"
+        android:singleLine="true"
+        android:text="-"
+        android:textColor="@color/colorPrimary"
+        fbutton:buttonColor="@color/fbutton_color_clouds"
+        fbutton:cornerRadius="2dp"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="1dp"
+        tools:ignore="HardcodedText" />
+</LinearLayout>
