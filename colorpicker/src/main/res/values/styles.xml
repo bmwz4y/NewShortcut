@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="PickerEditText">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_margin">4dp</item>
+		<item name="android:imeOptions">actionNext</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:textSize">22sp</item>
+	</style>
+	<style name="AlertDialogCustom" parent="@android:style/Theme.Dialog">
+		<item name="android:textColor">@android:color/background_dark</item>
+		<item name="android:typeface">monospace</item>
+		<item name="android:textSize">10sp</item>
+	</style>
+</resources>
