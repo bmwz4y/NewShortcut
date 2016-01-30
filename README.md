@@ -5,5 +5,7 @@ the application (A New Shortcut) in the Play Store
 
 
 uses:
+
 1. https://github.com/iPaulPro/aFileChooser
 2. https://github.com/hoang8f/android-flat-button
+3. https://github.com/QuadFlask/colorpicker
