@@ -22,8 +22,8 @@ android {
             minSdkVersion 17
             applicationId 'nodomain.yeh.newshortcut'
             targetSdkVersion 23
-            versionCode 1
-            versionName '0.91'
+            versionCode 2
+            versionName '1.0'
             proguardFile 'C:/Users/YEH/AndroidStudioProjects/NewShortcut/app/proguard-rules.pro'
         }
     }
