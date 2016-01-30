@@ -117,6 +117,7 @@ public class SettingsActivity extends AppCompatActivity {
                             public void onClick(DialogInterface dialog, int which) {
                             }
                         })
+                        .showColorEdit(true)
                         .build()
                         .show();
             }
