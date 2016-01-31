@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="nodomain.yeh.newshortcut">
 
-    <!-- TODO: Project comments, optimizations, debugging ☻  replace all support.v4 and v7 code-->
+    <!-- TODO: comments, optimizations,unit tests and UML -->
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
