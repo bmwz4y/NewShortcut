@@ -115,7 +115,7 @@ public class ColorPickerView extends View {
 		typedArray.recycle();
 	}
 
-	// FIXME Is it correct to find referenced view?
+
 	@Override
 	protected void onAttachedToWindow() {
 		super.onAttachedToWindow();

@@ -37,8 +37,6 @@ public class EditNameDialog extends DialogFragment implements TextView.OnEditorA
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        TextView oldName;
-
         Button ok;
         Button cancel;
 
@@ -47,11 +45,8 @@ public class EditNameDialog extends DialogFragment implements TextView.OnEditorA
 
         View view = inflater.inflate(R.layout.fragment_edit_name, container);
 
-        oldName = (TextView) view.findViewById(R.id.currentName_TextView);
-        oldName.setText(getString(R.string.nameDialogCurrent) + ": "
-                + TheWidgetConfigureActivity.loadTitlePref(view.getContext(), correspondingWidgetId));
-
         newName = (EditText) view.findViewById(R.id.rename_editText);
+        newName.setText(TheWidgetConfigureActivity.loadTitlePref(view.getContext(), correspondingWidgetId));
 
         // Show soft keyboard automatically
         newName.requestFocus();
